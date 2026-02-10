@@ -172,9 +172,6 @@ The 3D assets themselves have their own licenses (mostly CC0) - check each colle
 - [ ] Implement advanced filtering (by polygon count, material type, etc.)
 - [ ] Add asset preview videos
 - [ ] Create asset tagging system
-- [ ] Build API for programmatic access
-- [ ] Add user accounts and favorites
-- [ ] Implement asset ratings and reviews
 
 ---
 
