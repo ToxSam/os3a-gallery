@@ -564,6 +564,10 @@ export const VRMViewer = ({ url, backgroundGLB, onMetadataLoad, onTexturesLoad, 
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.shadowMap.enabled = true;
       renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+      // Tone mapping and color space for better contrast and "pop" (especially for GLB PBR materials)
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.15;
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
       rendererRef.current = renderer;
       
       // Handle resizing
@@ -592,6 +596,14 @@ export const VRMViewer = ({ url, backgroundGLB, onMetadataLoad, onTexturesLoad, 
       // Transparent background - page background will show through
       scene.background = null;
       
+      // Neutral environment map so PBR/GLB materials get reflections and don't look flat/dark
+      const envScene = new THREE.Scene();
+      envScene.background = new THREE.Color(0xececec);
+      const pmremGenerator = new THREE.PMREMGenerator(renderer);
+      const envMap = pmremGenerator.fromScene(envScene).texture;
+      scene.environment = envMap;
+      pmremGenerator.dispose();
+      
       sceneRef.current = scene;
 
       // Setup camera with dynamic clipping planes
@@ -606,22 +618,22 @@ export const VRMViewer = ({ url, backgroundGLB, onMetadataLoad, onTexturesLoad, 
       camera.lookAt(0, 1, 0);
       cameraRef.current = camera;
 
-      // Add lights
-      const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+      // Add lights (slightly stronger so GLB/VRM models pop more)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
       scene.add(ambientLight);
 
-      const mainLight = new THREE.DirectionalLight(0xffffff, 1);
+      const mainLight = new THREE.DirectionalLight(0xffffff, 1.2);
       mainLight.position.set(1, 2, 1);
       mainLight.castShadow = true;
       mainLight.shadow.mapSize.width = 1024;
       mainLight.shadow.mapSize.height = 1024;
       scene.add(mainLight);
 
-      const fillLight = new THREE.DirectionalLight(0xffffff, 0.3);
+      const fillLight = new THREE.DirectionalLight(0xffffff, 0.4);
       fillLight.position.set(-1, 1, -1);
       scene.add(fillLight);
 
-      const rimLight = new THREE.DirectionalLight(0xffcc88, 0.5);
+      const rimLight = new THREE.DirectionalLight(0xffdd99, 0.55);
       rimLight.position.set(0, 0, -5);
       scene.add(rimLight);
       
@@ -1293,6 +1305,11 @@ export const VRMViewer = ({ url, backgroundGLB, onMetadataLoad, onTexturesLoad, 
         
         if (controlsRef.current) {
           controlsRef.current.dispose();
+        }
+        
+        if (scene.environment) {
+          scene.environment.dispose();
+          scene.environment = null;
         }
         
         if (rendererRef.current) {

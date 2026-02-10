@@ -76,10 +76,10 @@ export const VRMInspectorViewer = ({ url, onMetadataLoad }) => {
         failIfMajorPerformanceCaveat: false,
       });
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      // Don't use tone mapping - it desaturates colors like pure white wireframes
-      // renderer.outputColorSpace = THREE.SRGBColorSpace;
-      // renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      // renderer.toneMappingExposure = 1;
+      // Tone mapping and color space for better contrast and "pop" (especially for GLB PBR materials)
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.15;
 
       const gl = renderer.getContext();
       if (!gl) {
@@ -136,7 +136,14 @@ export const VRMInspectorViewer = ({ url, onMetadataLoad }) => {
       // Transparent background - no gradient, scene will be transparent
       scene.background = null;
       
-      // No fog needed with transparent background
+      // Neutral environment map so PBR/GLB materials get reflections and don't look flat/dark
+      const envScene = new THREE.Scene();
+      envScene.background = new THREE.Color(0xececec);
+      const pmremGenerator = new THREE.PMREMGenerator(renderer);
+      const envMap = pmremGenerator.fromScene(envScene).texture;
+      scene.environment = envMap;
+      pmremGenerator.dispose();
+      
       sceneRef.current = scene;
 
       // Setup camera
@@ -150,22 +157,22 @@ export const VRMInspectorViewer = ({ url, onMetadataLoad }) => {
       camera.lookAt(0, 1, 0);
       cameraRef.current = camera;
 
-      // Add lights
-      const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+      // Add lights (slightly stronger so GLB/VRM models pop more)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
       scene.add(ambientLight);
 
-      const mainLight = new THREE.DirectionalLight(0xffffff, 1);
+      const mainLight = new THREE.DirectionalLight(0xffffff, 1.2);
       mainLight.position.set(1, 2, 1);
       mainLight.castShadow = true;
       mainLight.shadow.mapSize.width = 1024;
       mainLight.shadow.mapSize.height = 1024;
       scene.add(mainLight);
 
-      const fillLight = new THREE.DirectionalLight(0xffffff, 0.3);
+      const fillLight = new THREE.DirectionalLight(0xffffff, 0.4);
       fillLight.position.set(-1, 1, -1);
       scene.add(fillLight);
 
-      const rimLight = new THREE.DirectionalLight(0xffcc88, 0.5);
+      const rimLight = new THREE.DirectionalLight(0xffdd99, 0.55);
       rimLight.position.set(0, 0, -5);
       scene.add(rimLight);
       
@@ -868,6 +875,11 @@ export const VRMInspectorViewer = ({ url, onMetadataLoad }) => {
         window.removeEventListener('mousemove', handleMouseMove);
         window.removeEventListener('mouseup', handleMouseUp);
         window.removeEventListener('resize', handleResize);
+        
+        if (sceneRef.current?.environment) {
+          sceneRef.current.environment.dispose();
+          sceneRef.current.environment = null;
+        }
         
         if (rendererRef.current) {
           rendererRef.current.dispose();

@@ -108,6 +108,8 @@ export const HomeVRMViewer: React.FC<HomeVRMViewerProps> = ({ className, avatar:
         renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         renderer.outputColorSpace = THREE.SRGBColorSpace;
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.15;
         containerRef.current.appendChild(renderer.domElement);
 
         isActiveRef.current = true;
@@ -116,6 +118,14 @@ export const HomeVRMViewer: React.FC<HomeVRMViewerProps> = ({ className, avatar:
         const scene = new THREE.Scene();
         sceneRef.current = scene;
         scene.background = null;
+
+        // Neutral environment map so PBR/GLB materials get reflections and don't look flat/dark
+        const envScene = new THREE.Scene();
+        envScene.background = new THREE.Color(0xececec);
+        const pmremGenerator = new THREE.PMREMGenerator(renderer);
+        const envMap = pmremGenerator.fromScene(envScene).texture;
+        scene.environment = envMap;
+        pmremGenerator.dispose();
 
         // Initial camera setup
         const camera = new THREE.PerspectiveCamera(
@@ -126,11 +136,11 @@ export const HomeVRMViewer: React.FC<HomeVRMViewerProps> = ({ className, avatar:
         );
         cameraRef.current = camera;
 
-        // Enhanced Lighting Setup
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+        // Enhanced lighting (stronger so GLB/VRM models pop more)
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
         scene.add(ambientLight);
 
-        const mainLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        const mainLight = new THREE.DirectionalLight(0xffffff, 1.2);
         mainLight.position.set(0, 1, 2);
         scene.add(mainLight);
 
@@ -138,7 +148,7 @@ export const HomeVRMViewer: React.FC<HomeVRMViewerProps> = ({ className, avatar:
         fillLight.position.set(-2, 1, 0);
         scene.add(fillLight);
 
-        const rimLight = new THREE.DirectionalLight(0xffffff, 0.3);
+        const rimLight = new THREE.DirectionalLight(0xffdd99, 0.55);
         rimLight.position.set(0, 1, -2);
         scene.add(rimLight);
 
@@ -430,6 +440,10 @@ export const HomeVRMViewer: React.FC<HomeVRMViewerProps> = ({ className, avatar:
       vrmRef.current = null;
 
       if (sceneRef.current) {
+        if (sceneRef.current.environment) {
+          sceneRef.current.environment.dispose();
+          sceneRef.current.environment = null;
+        }
         sceneRef.current.clear();
         sceneRef.current = null;
       }
