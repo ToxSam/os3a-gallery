@@ -118,7 +118,7 @@ export const AvatarGallery: React.FC = () => {
         }
 
         const apiData = data as ApiResponse;
-        setAvatars(apiData.avatars);
+        setAvatars(apiData.avatars ?? []);
         setProjects(apiData.projects || []);
         
         // Only initialize avatar selection once (prevents double selection in React Strict Mode)
