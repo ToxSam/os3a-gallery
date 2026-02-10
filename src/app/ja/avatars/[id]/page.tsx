@@ -207,7 +207,6 @@ export default function AvatarDetailPage() {
               <div className="aspect-square bg-gray-100 dark:bg-gray-900 rounded-lg overflow-hidden border border-gray-300 dark:border-gray-700">
                 <VRMViewer 
                   url={avatar.modelFileUrl}
-                  animationUrl={null}
                   backgroundGLB={null}
                   onMetadataLoad={() => {}}
                   onTexturesLoad={() => {}}
