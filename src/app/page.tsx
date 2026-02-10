@@ -215,7 +215,7 @@ export default function Home() {
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="w-2 h-2 bg-gray-900 dark:bg-gray-100 rounded-full mt-2"></span>
-                        <span>{t('home.features.inspector.bulletPoints.expressions')}</span>
+                        <span>{t('home.features.inspector.bulletPoints.geometry')}</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="w-2 h-2 bg-gray-900 dark:bg-gray-100 rounded-full mt-2"></span>

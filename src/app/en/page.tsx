@@ -201,7 +201,7 @@ export default function Home() {
                       <p className="text-gray-600 dark:text-gray-300 mb-6">{t('home.features.inspector.description')}</p>
                       <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                         <li>{t('home.features.inspector.bulletPoints.metadata')}</li>
-                        <li>{t('home.features.inspector.bulletPoints.expressions')}</li>
+                        <li>{t('home.features.inspector.bulletPoints.geometry')}</li>
                         <li>{t('home.features.inspector.bulletPoints.materials')}</li>
                         <li>{t('home.features.inspector.bulletPoints.validation')}</li>
                       </ul>
