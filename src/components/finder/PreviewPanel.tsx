@@ -5,7 +5,6 @@ import { Download, File, Image as ImageIcon, FileIcon, FileText, Layers, Box } f
 import { useI18n } from '@/lib/i18n';
 import { Avatar, Project } from '@/types/avatar';
 import { VRMViewer } from '@/components/VRMViewer/VRMViewer';
-import { DEFAULT_ANIMATION } from '@/components/VRMViewer/constants/defaults';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionItem } from '@/components/ui/accordion';
@@ -1221,7 +1220,6 @@ function PreviewPanel({ avatar, selectedFile, projects }: PreviewPanelProps) {
               <VRMViewer 
                 key={previewFile.url}
                 url={previewFile.url}
-                animationUrl={DEFAULT_ANIMATION}
                 backgroundGLB={null}
                 onMetadataLoad={handleMetadataLoad}
                 onTexturesLoad={handleTexturesLoad}
@@ -1256,7 +1254,6 @@ function PreviewPanel({ avatar, selectedFile, projects }: PreviewPanelProps) {
                 <VRMViewer 
                   key={avatar.modelFileUrl}
                   url={avatar.modelFileUrl}
-                  animationUrl={DEFAULT_ANIMATION}
                   backgroundGLB={null}
                   onMetadataLoad={handleMetadataLoad}
                   onTexturesLoad={handleTexturesLoad}
