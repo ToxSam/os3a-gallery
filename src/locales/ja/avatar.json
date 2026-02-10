@@ -1,0 +1,38 @@
+{
+  "details": {
+    "title": "技術詳細",
+    "format": "フォーマット",
+    "polygons": "ポリゴン数",
+    "materials": "マテリアル",
+    "license": "ライセンス",
+    "project": "プロジェクト",
+    "author": "作者"
+  },
+  "vrm": {
+    "title": "VRM情報",
+    "version": "VRMバージョン",
+    "allowedUsers": "使用許可",
+    "everyone": "制限なし"
+  },
+  "controls": {
+    "info": "アバター情報",
+    "wireframe": "ワイヤーフレーム",
+    "showBones": "ボーン表示",
+    "ruler": "身長定規",
+    "download": "ダウンロード",
+    "select": "選択",
+    "deselectAll": "全選択解除",
+    "selectAll": "全選択",
+    "search": "アバターを検索...",
+    "browse": "アバターを選択"
+  },
+  "height": "身長: {{height}}m",
+  "formats": {
+    "vrm": "VRM",
+    "fbx": "FBX",
+    "vrmViewer": "GLBビューアー",
+    "fbxViewer": "FBXビューアー",
+    "voxel": "ボクセルVRM",
+    "voxel-fbx": "ボクセルFBX"
+  }
+} 

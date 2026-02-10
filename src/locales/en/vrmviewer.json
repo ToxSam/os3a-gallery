@@ -1,0 +1,204 @@
+{
+  "title": "GLB Inspector",
+  "description": "Drop your GLB 3D asset anywhere here or click below to start exploring. Let's see what's inside your model!",
+  "mobile": {
+    "desktopOnly": {
+      "title": "Desktop Only Feature",
+      "description": "The GLB Inspector is currently optimized for desktop use. Please visit this page on a computer for the best experience."
+    },
+    "intro": {
+      "title": "GLB Inspector",
+      "description": "A powerful tool for inspecting and analyzing GLB 3D asset files. View metadata, explore textures, and more."
+    },
+    "features": {
+      "title": "Key Features",
+      "modelInfo": {
+        "title": "Model Information",
+        "description": "View comprehensive metadata, including author details and licensing."
+      },
+      "expressionControl": {
+        "title": "Expression Control",
+        "description": "Test and preview facial expressions and blendshapes."
+      },
+      "textureAnalysis": {
+        "title": "Texture Analysis",
+        "description": "Examine and download model textures with format details."
+      }
+    },
+    "comingSoon": {
+      "title": "Mobile Version Coming Soon",
+      "description": "We're working on a mobile-optimized version of the GLB Inspector. For now, please use a desktop computer to access all features."
+    },
+    "openDesktop": "Open on Desktop"
+  },
+  "buttons": {
+    "openFile": "Open GLB File",
+    "learnMore": "Learn More",
+    "showWireframe": "Show Wireframe",
+    "hideWireframe": "Hide Wireframe",
+    "showBones": "Show Bones",
+    "hideBones": "Hide Bones"
+  },
+  "features": {
+    "title": "Key Features",
+    "modelInfo": {
+      "title": "Model Information",
+      "description": "View comprehensive metadata, including author details and licensing."
+    },
+    "expressionControl": {
+      "title": "Expression Control",
+      "description": "Test and preview facial expressions and blendshapes."
+    },
+    "textureAnalysis": {
+      "title": "Texture Analysis",
+      "description": "Examine and download model textures with format details."
+    },
+    "technicalDetails": {
+      "title": "Technical Details",
+      "description": "Access raw metadata and model statistics."
+    }
+  },
+  "tips": {
+    "title": "Quick Tips",
+    "controls": {
+      "title": "Camera Controls",
+      "description": "Left-click to orbit, right-click to pan, scroll to zoom"
+    },
+    "wireframe": {
+      "title": "Visualization Options",
+      "description": "Toggle wireframe and skeleton visualization"
+    },
+    "expressions": {
+      "title": "Expression Testing",
+      "description": "Test facial expressions with intuitive sliders"
+    }
+  },
+  "dropzone": {
+    "title": "Hey there! 👋",
+    "description": "Drop your GLB 3D asset anywhere here or click below to start exploring. Let's see what's inside your model!",
+    "instructions": "Drop a GLB file here to load it"
+  },
+  "loading": "Loading...",
+  "metadata": {
+    "title": "Model Information",
+    "basicInfo": "Basic Information",
+    "author": "Author",
+    "contactInfo": "Contact Information",
+    "license": "License",
+    "otherPermissions": "Other Permissions",
+    "references": "References",
+    "version": "Version",
+    "stats": {
+      "title": "Model Statistics",
+      "triangles": "Triangles",
+      "materials": "Materials",
+      "textures": "Textures",
+      "bones": "Bones",
+      "blendshapes": "Blendshapes",
+      "fileSize": "File Size"
+    }
+  },
+  "expressions": {
+    "title": "Expressions",
+    "controls": "Expression Controls",
+    "reset": "Reset All",
+    "noExpressions": "No expressions available",
+    "blendshapesLabel": "Blendshapes / Morph Targets",
+    "categories": {
+      "emotions": "Emotions",
+      "mouth": "Mouth",
+      "eyes": "Eyes",
+      "other": "Other"
+    }
+  },
+  "textures": {
+    "title": "Textures",
+    "format": "Format",
+    "dimensions": "Dimensions",
+    "size": "Size",
+    "download": "Download Texture",
+    "noTextures": "No textures available",
+    "details": {
+      "fileSize": "File Size",
+      "format": "Format",
+      "type": "Type",
+      "usage": "Usage",
+      "material": "Material",
+      "filter": "Filter",
+      "wrap": "Wrap",
+      "mipmaps": "Mipmaps"
+    }
+  },
+  "technical": {
+    "title": "Technical Details",
+    "raw": "Raw Metadata",
+    "copy": "Copy to Clipboard",
+    "description": "This view shows the raw metadata structure of the GLB file. Useful for debugging and development purposes."
+  },
+  "units": {
+    "bytes": "Bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "tb": "TB"
+  },
+  "errors": {
+    "noVrmData": "Could not load model data from the file",
+    "setupFailed": "Failed to setup model: {{error}}",
+    "loadFailed": "Failed to load GLB file: {{error}}",
+    "initializationFailed": "Failed to initialize 3D viewer"
+  },
+  "tabs": {
+    "about": "About",
+    "information": "Information",
+    "textures": "Textures",
+    "expressions": "Expressions",
+    "rawMetadata": "Raw Metadata"
+  },
+  "license": {
+    "title": "License Information",
+    "type": "License Type",
+    "allowedUsers": "Allowed Users",
+    "commercialUse": "Commercial Use",
+    "violentUsage": "Violent Usage",
+    "sexualUsage": "Sexual Usage"
+  },
+  "statistics": {
+    "title": "Model Statistics",
+    "fileSize": "File Size",
+    "format": "Format",
+    "height": "Height",
+    "geometry": "Geometry",
+    "vertices": "Vertices",
+    "triangles": "Triangles",
+    "assets": "Assets",
+    "materials": "Materials",
+    "textures": "Textures",
+    "bones": "Bones"
+  },
+  "texture": {
+    "dimensions": "Dimensions",
+    "fileSize": "File Size",
+    "format": "Format",
+    "type": "Type",
+    "usage": "Usage",
+    "material": "Material",
+    "filter": "Filter Mode",
+    "wrap": "Wrap Mode",
+    "mipmaps": "Mipmaps",
+    "download": "Download Texture"
+  },
+  "upload": {
+    "instructions": "Upload a GLB file to inspect its contents"
+  },
+  "raw": {
+    "description": "This shows the raw metadata structure of the GLB file, useful for debugging and development purposes."
+  },
+  "controls": {
+    "title": "Controls",
+    "orbit": "Left click + drag to rotate the view",
+    "pan": "Right click + drag to pan",
+    "zoom": "Mouse wheel to zoom in/out",
+    "reset": "Double click to reset view"
+  }
+} 

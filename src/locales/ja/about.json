@@ -1,0 +1,104 @@
+{
+  "title": "OpenSource3DAssets.comについて",
+  "whatWeDo": {
+    "title": "私たちの活動",
+    "description1": "OpenSource3DAssets.comは、明確なライセンス情報とともに品質の高い3Dアセットを発見できるレジストリです。",
+    "description2": "小道具、環境、建造物など、才能あるクリエイターによるオープンソースの3Dモデルを紹介しています。すべてのアセットはGLB形式を使用し、主要なゲームエンジンや3Dソフトウェアと互換性があります。散在するリポジトリを探し回る必要はもうありません。メタデータとリンクを収集しているので、あなたは創作に集中できます。"
+  },
+  "howItWorks": {
+    "title": "仕組み",
+    "subtitle": "コレクションをインデックス化 → メタデータを保存 → あなたが閲覧・ダウンロード",
+    "steps": [
+      "オープンソースライセンスを持つ3Dアセットコレクションを見つけます",
+      "ダウンロードリンク、プレビュー、仕様、ライセンス情報をカタログ化します",
+      "コレクション、テーマ、スタイルでフィルタリングして、必要なものをダウンロードできます",
+      "ファイルはGitHub、IPFS、またはArweaveでホストされ、アクセス可能で長期保存が可能です"
+    ],
+    "description": "無料の3Dアセットの検索エンジンとして考えてください - 991以上のモデルを1つの場所で発見可能にします。"
+  },
+  "status": {
+    "title": "現在の状況",
+    "badges": {
+      "beta": {
+        "label": "ベータ版",
+        "description": "アップデートと改善を予定しています"
+      },
+      "avatars": {
+        "label": "991以上のアセット",
+        "description": "17のコレクションにわたって"
+      },
+      "format": {
+        "label": "GLB形式",
+        "description": "ユニバーサル互換性"
+      },
+      "license": {
+        "label": "CC0ライセンス",
+        "description": "どのプロジェクトでも自由に使用可能"
+      }
+    }
+  },
+  "collections": {
+    "title": "注目のコレクション",
+    "polygonalMind": {
+      "title": "Polygonal Mindコレクション",
+      "description": "小道具、環境、建造物を特色とする17のテーマ別コレクション。MomusParkの公園アセットからTomb Chaserのエジプトピラミッド、日本のネオンパゴダまで。",
+      "stats": "991以上のアセット | CC0ライセンス"
+    }
+  },
+  "license": {
+    "title": "ライセンス",
+    "description": "私たちのコレクションのほとんどのアセットはCC0（パブリックドメイン）です。つまり帰属表示なしで何にでも使用できます。一部のコレクションには異なるライセンスがあり、各アセットページで明確に表示しています。"
+  },
+  "technical": {
+    "title": "技術詳細",
+    "format": {
+      "title": "ファイル形式",
+      "description": "すべてのアセットはGLB（バイナリglTF）を使用しており、Webを超えた3Dの標準形式です。Blender、Unity、Unreal Engine、Three.jsなどと互換性があります。"
+    },
+    "storage": {
+      "title": "データストレージ",
+      "description": "アセットのメタデータとファイルはGitHub、IPFS、またはArweaveに保存できます。長期的なアクセス性、分散化、バージョン管理を確保し、単一のホスティングプロバイダーに限定されません。"
+    }
+  },
+  "future": {
+    "title": "今後の計画",
+    "items": [
+      "才能あるクリエイターからのさらなるアセットコレクション",
+      "ポリゴン数、マテリアルタイプ、テーマによる高度なフィルタリング",
+      "アセットタグ付けとカテゴリ分類システム"
+    ]
+  },
+  "getInvolved": {
+    "title": "参加する",
+    "submitCollection": {
+      "title": "コレクションを提出",
+      "description": "オープンライセンスの3Dアセットをお持ちですか？追加させていただきます！",
+      "requirements": {
+        "title": "要件：",
+        "list": [
+          "オープンソースライセンス（CC0、CC-BYなど）",
+          "GLB形式",
+          "安定したホスティング（GitHub、IPFS、Arweaveなど）"
+        ]
+      },
+      "submitVia": "提出方法：[GitHub Discussions](https://github.com/ToxSam/open-source-3D-assets/discussions)"
+    },
+    "contributeCode": {
+      "title": "コードを貢献",
+      "description": "バグを見つけましたか？機能を追加したいですか？",
+      "link": "Issueを開く → [GitHub Issues](https://github.com/ToxSam/os3a-gallery/issues)"
+    },
+    "giveFeedback": {
+      "title": "フィードバックを提供",
+      "description": "改善のアイデアがありますか？お知らせください！",
+      "link": "フィードバックを共有 → [GitHub Issues](https://github.com/ToxSam/os3a-gallery/issues)"
+    }
+  },
+  "connect": {
+    "title": "接続",
+    "website": "ウェブサイト",
+    "websiteUrl": "https://toxsam.com",
+    "twitter": "Twitter",
+    "twitterUrl": "https://twitter.com/toxsam"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "概要",
+    "gallery": "ギャラリー",
+    "resources": "リソース",
+    "login": "ログイン"
+  },
+  "actions": {
+    "view": "表示",
+    "upload": "アップロード",
+    "download": "ダウンロード",
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "submit": "送信"
+  },
+  "language": {
+    "select": "言語を選択",
+    "en": "English",
+    "ja": "日本語"
+  },
+  "loading": "読み込み中..."
+} 

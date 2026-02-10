@@ -1,0 +1,22 @@
+{
+  "navigation": {
+    "avatars": "アバター",
+    "finder": "ファインダー",
+    "about": "概要",
+    "resources": "リソース",
+    "viewer": "インスペクター"
+  },
+  "warning": {
+    "desktop": "新機能 - Xで問題を報告",
+    "mobile": "ベータ"
+  },
+  "social": {
+    "portfolio": "ポートフォリオ",
+    "github": "GitHub",
+    "twitter": "X (Twitter)"
+  },
+  "notification": {
+    "newFeature": "新機能",
+    "reportIssues": "Xで問題を報告"
+  }
+} 

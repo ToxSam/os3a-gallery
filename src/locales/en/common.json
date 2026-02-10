@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "resources": "Resources",
+    "login": "Login"
+  },
+  "actions": {
+    "view": "View",
+    "upload": "Upload",
+    "download": "Download",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "submit": "Submit"
+  },
+  "language": {
+    "select": "Select Language",
+    "en": "English",
+    "ja": "日本語"
+  },
+  "loading": "Loading..."
+} 

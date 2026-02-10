@@ -1,0 +1,106 @@
+{
+  "title": "Resources & Downloads",
+  "collections": {
+    "title": "Asset Collections",
+    "description": "This site showcases 3D asset collections with clear licenses and sources:",
+    "original": {
+      "title": "Polygonal Mind Collections (CC0)",
+      "name": "17 themed collections – 991+ free 3D assets",
+      "license": "License: CC0 (Public Domain) – use however you want, no attribution needed",
+      "storage": "Storage: GitHub (open-source-3D-assets)",
+      "batchDownload": "Source: open-source-3D-assets repository",
+      "includes": "Includes: GLB files, props, environments, structures"
+    },
+    "community": {
+      "title": "More Collections",
+      "note": "Additional CC0 and open-license 3D collections may be added over time. Check the Asset Browser for current listings."
+    },
+    "licenseNote": "License matters! CC0 assets can be used freely without credit. CC-BY assets require attribution. Always check the collection details."
+  },
+  "developers": {
+    "title": "For Developers",
+    "database": {
+      "title": "Asset Database (GitHub)",
+      "description": "Access all asset metadata as JSON files – perfect for integrating into your app or game.",
+      "link": "View Asset Database →",
+      "structure": {
+        "title": "Structure",
+        "projects": "projects.json → All collections + license info",
+        "assets": "/assets/",
+        "r1": "pm-momuspark.json → Collection asset data",
+        "r2": "pm-medieval-fair.json",
+        "r3": "Other collection JSON files..."
+      },
+      "includes": "Each asset includes:",
+      "includesList": [
+        "Direct GLB download link",
+        "Preview images",
+        "Metadata and tags",
+        "License information"
+      ]
+    },
+    "website": {
+      "title": "Website Source Code",
+      "description": "The gallery website is open source.",
+      "link": "View Website Code →"
+    }
+  },
+  "glb": {
+    "title": "About GLB Format",
+    "description": "GLB is the binary glTF format used for 3D models, props, and environments.",
+    "why": {
+      "title": "Why we use GLB:",
+      "reasons": [
+        "Works in Blender, Unity, Unreal, Three.js, and most 3D tools",
+        "Open Khronos standard – not locked to one vendor",
+        "Single-file: model and materials in one file",
+        "Efficient and web-friendly"
+      ]
+    },
+    "compatible": {
+      "title": "Compatible with:",
+      "list": [
+        "Blender (native)",
+        "Unity (GLTFUtility or similar)",
+        "Unreal Engine (glTF import)",
+        "Three.js / Web (GLTFLoader)"
+      ]
+    },
+    "learnMore": "Learn more about glTF/GLB →"
+  },
+  "ardrive": {
+    "title": "What is ArDrive?",
+    "description": "ArDrive is permanent, decentralized storage built on Arweave.",
+    "why": {
+      "title": "Why it matters:",
+      "reasons": [
+        "Files stored forever (can't be deleted or taken offline)",
+        "One-time payment, no subscriptions",
+        "Perfect for preserving open source content"
+      ]
+    },
+    "note": "Some asset sources may use ArDrive or IPFS for permanent storage. Our main registry is the open-source-3D-assets GitHub repository."
+  },
+  "philosophy": {
+    "title": "Open Source Philosophy",
+    "description": "We believe 3D assets should be free and accessible.",
+    "why": "That's why we highlight CC0 (public domain) collections:",
+    "benefits": [
+      "✅ Use in commercial projects",
+      "✅ Modify and remix freely",
+      "✅ No attribution required",
+      "✅ Use in games, apps, VR, and artwork"
+    ],
+    "note": "Collections have their own licenses – we make these easy to find so you know what you can do with each asset.",
+    "conclusion": "The 3D ecosystem should be built on open standards, not locked behind paywalls."
+  },
+  "help": {
+    "title": "Need Help?",
+    "questions": "Questions about licenses? Check the collection details on each asset page.",
+    "building": "Building something? Our JSON data is free to use – build your own asset browser!",
+    "contribute": "Want to contribute? Submit your collection via GitHub.",
+    "contributeLink": "https://github.com/ToxSam/open-source-3D-assets",
+    "contact": "Contact: @ToxSam",
+    "contactLink": "https://x.com/toxsam"
+  }
+}

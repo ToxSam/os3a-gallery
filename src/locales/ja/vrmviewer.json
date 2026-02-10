@@ -1,0 +1,204 @@
+{
+  "title": "GLBインスペクター",
+  "description": "GLB 3Dアセットをここにドロップするか、下のボタンをクリックして探索を開始しましょう。モデルの中身を見てみましょう！",
+  "mobile": {
+    "desktopOnly": {
+      "title": "デスクトップ専用機能",
+      "description": "GLBインスペクターは現在デスクトップ用に最適化されています。最適な体験のためにパソコンでご利用ください。"
+    },
+    "intro": {
+      "title": "GLBインスペクター",
+      "description": "GLB 3Dアセットファイルを検査・分析するための強力なツールです。メタデータの表示、テクスチャの探索などが可能です。"
+    },
+    "features": {
+      "title": "主な機能",
+      "modelInfo": {
+        "title": "モデル情報",
+        "description": "作者の詳細やライセンスを含む包括的なメタデータを表示します。"
+      },
+      "expressionControl": {
+        "title": "表情コントロール",
+        "description": "表情とブレンドシェイプをテストしてプレビューできます。"
+      },
+      "textureAnalysis": {
+        "title": "テクスチャ分析",
+        "description": "フォーマットの詳細とともにモデルのテクスチャを確認・ダウンロードできます。"
+      }
+    },
+    "comingSoon": {
+      "title": "モバイル版開発中",
+      "description": "GLBインスペクターのモバイル最適化版を開発中です。現在は、パソコンからすべての機能にアクセスしてください。"
+    },
+    "openDesktop": "デスクトップで開く"
+  },
+  "buttons": {
+    "openFile": "GLBファイルを開く",
+    "learnMore": "詳細を見る",
+    "showWireframe": "ワイヤーフレームを表示",
+    "hideWireframe": "ワイヤーフレームを非表示",
+    "showBones": "ボーンを表示",
+    "hideBones": "ボーンを非表示"
+  },
+  "features": {
+    "title": "主な機能",
+    "modelInfo": {
+      "title": "モデル情報",
+      "description": "作者の詳細やライセンスを含む包括的なメタデータを表示します。"
+    },
+    "expressionControl": {
+      "title": "表情コントロール",
+      "description": "表情とブレンドシェイプをテストしてプレビューできます。"
+    },
+    "textureAnalysis": {
+      "title": "テクスチャ分析",
+      "description": "フォーマットの詳細とともにモデルのテクスチャを確認・ダウンロードできます。"
+    },
+    "technicalDetails": {
+      "title": "技術詳細",
+      "description": "生のメタデータとモデルの統計情報にアクセスできます。"
+    }
+  },
+  "tips": {
+    "title": "クイックヒント",
+    "controls": {
+      "title": "カメラ操作",
+      "description": "左クリック + ドラッグで回転、右クリック + ドラッグでパン、スクロールでズーム"
+    },
+    "wireframe": {
+      "title": "表示オプション",
+      "description": "ワイヤーフレームとスケルトンの表示を切り替え"
+    },
+    "expressions": {
+      "title": "表情テスト",
+      "description": "直感的なスライダーで表情をテスト"
+    }
+  },
+  "dropzone": {
+    "title": "こんにちは！👋",
+    "description": "VRMアバターをここにドロップするか、下のボタンをクリックして探索を開始しましょう。モデルの中身を見てみましょう！",
+    "instructions": "VRMファイルをここにドロップしてロード"
+  },
+  "loading": "読み込み中...",
+  "metadata": {
+    "title": "モデル情報",
+    "basicInfo": "基本情報",
+    "author": "作者",
+    "contactInfo": "連絡先",
+    "license": "ライセンス",
+    "otherPermissions": "その他の許可",
+    "references": "参照",
+    "version": "バージョン",
+    "stats": {
+      "title": "モデル統計",
+      "triangles": "ポリゴン数",
+      "materials": "マテリアル数",
+      "textures": "テクスチャ数",
+      "bones": "ボーン数",
+      "blendshapes": "ブレンドシェイプ数",
+      "fileSize": "ファイルサイズ"
+    }
+  },
+  "expressions": {
+    "title": "表情",
+    "controls": "表情コントロール",
+    "reset": "すべてリセット",
+    "noExpressions": "表情がありません",
+    "blendshapesLabel": "ブレンドシェイプ / モーフターゲット",
+    "categories": {
+      "emotions": "感情",
+      "mouth": "口",
+      "eyes": "目",
+      "other": "その他"
+    }
+  },
+  "textures": {
+    "title": "テクスチャ",
+    "format": "フォーマット",
+    "dimensions": "サイズ",
+    "size": "容量",
+    "download": "テクスチャをダウンロード",
+    "noTextures": "テクスチャがありません",
+    "details": {
+      "fileSize": "ファイルサイズ",
+      "format": "フォーマット",
+      "type": "種類",
+      "usage": "用途",
+      "material": "マテリアル",
+      "filter": "フィルター",
+      "wrap": "ラップ",
+      "mipmaps": "ミップマップ"
+    }
+  },
+  "technical": {
+    "title": "技術詳細",
+    "raw": "生のメタデータ",
+    "copy": "クリップボードにコピー",
+    "description": "VRMファイルの生のメタデータ構造を表示します。デバッグと開発目的に役立ちます。"
+  },
+  "units": {
+    "bytes": "バイト",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "tb": "TB"
+  },
+  "errors": {
+    "noVrmData": "VRMデータをファイルから読み込めませんでした",
+    "setupFailed": "VRMのセットアップに失敗しました: {{error}}",
+    "loadFailed": "VRMファイルの読み込みに失敗しました: {{error}}",
+    "initializationFailed": "3Dビューワーの初期化に失敗しました"
+  },
+  "tabs": {
+    "about": "概要",
+    "information": "情報",
+    "textures": "テクスチャ",
+    "expressions": "表情",
+    "rawMetadata": "生のメタデータ"
+  },
+  "license": {
+    "title": "ライセンス情報",
+    "type": "ライセンスタイプ",
+    "allowedUsers": "利用可能なユーザー",
+    "commercialUse": "商用利用",
+    "violentUsage": "暴力的な使用",
+    "sexualUsage": "性的な使用"
+  },
+  "statistics": {
+    "title": "モデル統計",
+    "fileSize": "ファイルサイズ",
+    "format": "フォーマット",
+    "height": "身長",
+    "geometry": "ジオメトリ",
+    "vertices": "頂点数",
+    "triangles": "ポリゴン数",
+    "assets": "アセット",
+    "materials": "マテリアル数",
+    "textures": "テクスチャ数",
+    "bones": "ボーン数"
+  },
+  "texture": {
+    "dimensions": "サイズ",
+    "fileSize": "ファイルサイズ",
+    "format": "フォーマット",
+    "type": "種類",
+    "usage": "用途",
+    "material": "マテリアル",
+    "filter": "フィルターモード",
+    "wrap": "ラップモード",
+    "mipmaps": "ミップマップ",
+    "download": "テクスチャをダウンロード"
+  },
+  "upload": {
+    "instructions": "VRMファイルをアップロードして内容を確認"
+  },
+  "controls": {
+    "title": "操作方法",
+    "orbit": "左クリック + ドラッグで回転",
+    "pan": "右クリック + ドラッグで移動",
+    "zoom": "マウスホイールでズーム",
+    "reset": "ダブルクリックでビューをリセット"
+  },
+  "raw": {
+    "description": "VRMファイルの生のメタデータ構造を表示します。デバッグと開発目的に役立ちます。"
+  }
+} 

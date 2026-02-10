@@ -1,0 +1,106 @@
+{
+  "title": "リソース＆ダウンロード",
+  "collections": {
+    "title": "アセットコレクション",
+    "description": "このサイトでは、ライセンスとソースが明確な3Dアセットコレクションを紹介しています：",
+    "original": {
+      "title": "Polygonal Mindコレクション（CC0）",
+      "name": "17のテーマコレクション – 991以上の無料3Dアセット",
+      "license": "ライセンス：CC0（パブリックドメイン）– 自由に使用可能、帰属表示不要",
+      "storage": "ストレージ：GitHub（open-source-3D-assets）",
+      "batchDownload": "ソース：open-source-3D-assetsリポジトリ",
+      "includes": "含まれるもの：GLBファイル、小物、環境、構造物"
+    },
+    "community": {
+      "title": "その他のコレクション",
+      "note": "CC0およびオープンライセンスの3Dコレクションは随時追加される場合があります。アセットブラウザで最新一覧をご確認ください。"
+    },
+    "licenseNote": "ライセンスは重要です。CC0アセットはクレジットなしで自由に使用できます。CC-BYは帰属表示が必要です。コレクションの詳細を必ず確認してください。"
+  },
+  "developers": {
+    "title": "開発者向け",
+    "database": {
+      "title": "アセットデータベース（GitHub）",
+      "description": "すべてのアセットメタデータをJSONファイルで取得 – アプリやゲームへの統合に最適です。",
+      "link": "アセットデータベースを表示 →",
+      "structure": {
+        "title": "構造",
+        "projects": "projects.json → 全コレクション＋ライセンス情報",
+        "assets": "/assets/",
+        "r1": "pm-momuspark.json → コレクションアセットデータ",
+        "r2": "pm-medieval-fair.json",
+        "r3": "その他のコレクションJSONファイル..."
+      },
+      "includes": "各アセットには以下が含まれます：",
+      "includesList": [
+        "直接GLBダウンロードリンク",
+        "プレビュー画像",
+        "メタデータとタグ",
+        "ライセンス情報"
+      ]
+    },
+    "website": {
+      "title": "ウェブサイトのソースコード",
+      "description": "ギャラリーサイトはオープンソースです。",
+      "link": "ウェブサイトコードを表示 →"
+    }
+  },
+  "glb": {
+    "title": "GLB形式について",
+    "description": "GLBは3Dモデル・小物・環境に使われるバイナリglTF形式です。",
+    "why": {
+      "title": "GLBを使用する理由：",
+      "reasons": [
+        "Blender、Unity、Unreal、Three.jsなどほとんどの3Dツールで利用可能",
+        "Khronosのオープン標準 – ベンダーにロックインされない",
+        "単一ファイル：モデルとマテリアルを1ファイルに",
+        "効率的でWeb向け"
+      ]
+    },
+    "compatible": {
+      "title": "互換性：",
+      "list": [
+        "Blender（ネイティブ）",
+        "Unity（GLTFUtilityなど）",
+        "Unreal Engine（glTFインポート）",
+        "Three.js / Web（GLTFLoader）"
+      ]
+    },
+    "learnMore": "glTF/GLBについて詳しく見る →"
+  },
+  "ardrive": {
+    "title": "ArDriveとは？",
+    "description": "ArDriveはArweave上に構築された永続的な分散型ストレージです。",
+    "why": {
+      "title": "重要な理由：",
+      "reasons": [
+        "ファイルは永久に保存される（削除・オフライン化されない）",
+        "一回限りの支払い、サブスクリプションなし",
+        "オープンソースコンテンツの保存に最適"
+      ]
+    },
+    "note": "一部のアセットソースはArDriveやIPFSで永続保存している場合があります。メインのレジストリはopen-source-3D-assetsのGitHubリポジトリです。"
+  },
+  "philosophy": {
+    "title": "オープンソースの理念",
+    "description": "3Dアセットは無料でアクセス可能であるべきだと信じています。",
+    "why": "そのためCC0（パブリックドメイン）コレクションを紹介しています：",
+    "benefits": [
+      "✅ 商用プロジェクトで使用",
+      "✅ 自由に変更・リミックス",
+      "✅ 帰属表示不要",
+      "✅ ゲーム、アプリ、VR、アートで使用"
+    ],
+    "note": "コレクションにはそれぞれライセンスがあります – 各アセットで何ができるかをわかりやすく表示しています。",
+    "conclusion": "3Dエコシステムはペイウォールではなくオープンスタンダードの上に構築されるべきです。"
+  },
+  "help": {
+    "title": "ヘルプが必要ですか？",
+    "questions": "ライセンスについて質問がありますか？各アセットページのコレクション詳細を確認してください。",
+    "building": "何かを作成していますか？JSONデータは無料で使用できます – 独自のアセットブラウザを構築してください！",
+    "contribute": "貢献したいですか？GitHubでコレクションを提出してください。",
+    "contributeLink": "https://github.com/ToxSam/open-source-3D-assets",
+    "contact": "連絡先：@ToxSam",
+    "contactLink": "https://x.com/toxsam"
+  }
+}

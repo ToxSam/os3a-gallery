@@ -1,0 +1,113 @@
+{
+  "title": "Open Source 3D Assets",
+  "description": "Discover, customize, and download high-quality 3D assets for games, VR, and 3D projects — all completely free and open source.",
+  "explore_gallery": "Explore Gallery",
+  "try_viewer": "Try 3D Viewer",
+  "features_title": "Everything You Need For 3D Assets",
+  "hero": {
+    "title": "Open Source 3D Assets",
+    "titleBig": "Open Source 3D Assets",
+    "tagline": "for Games, VR & 3D Projects",
+    "description": "A curated collection of high-quality 3D assets including props, environments, and structures — completely free and open source. Built on GLB and glTF standards.",
+    "exploreButton": "Explore Gallery",
+    "viewerButton": "Try 3D Inspector",
+    "githubButton": "View on GitHub"
+  },
+  "about": {
+    "section_title": "About the Project",
+    "title": "Find 3D Assets You Can Actually Use",
+    "description": "Open Source 3D Assets helps you discover quality 3D models with clear licensing. Whether you need props for a game, environment assets for VR, or structures for visualization - we've collected 991+ GLB files from talented creators so you don't have to hunt them down yourself.",
+    "description_2": "991+ assets across 17 themed collections - mostly CC0 (use however you want). We make the licenses crystal clear so you know exactly what you can do.",
+    "github_description": "No gatekeeping. Download directly from our gallery, or if you're a developer, grab our",
+    "github_link": "JSON database from GitHub",
+    "github_description_2": "and build your own tools with it."
+  },
+  "features": {
+    "section_title": "Tools & Features",
+    "title": "Awesome Free Tools for Everyone",
+    "browse": {
+      "title": "Asset Gallery",
+      "description": "Browse our extensive collection of 991+ 3D assets with advanced filtering options:",
+      "bulletPoints": {
+        "preview": "Preview assets in 3D before downloading",
+        "filter": "Filter by collection, theme, and style",
+        "download": "Batch download options available",
+        "updates": "Regular updates with new additions"
+      },
+      "cta": "Open Gallery"
+    },
+    "inspector": {
+      "title": "3D Inspector",
+      "description": "Advanced tool for analyzing and inspecting 3D asset files:",
+      "bulletPoints": {
+        "metadata": "Examine detailed metadata and properties",
+        "materials": "View material and texture information",
+        "geometry": "Check polygon count and vertex data",
+        "validation": "Validate technical specifications"
+      },
+      "cta": "Open Inspector"
+    }
+  },
+  "technical": {
+    "section_title": "Technical Overview",
+    "title": "Built on Open Standards",
+    "vrm_title": "GLB Format Explained",
+    "vrm_description": "GLB is the binary version of glTF (GL Transmission Format), the standard 3D file format for the web and beyond. Think of it as the \"JPEG of 3D\" - efficient, widely supported, and perfect for real-time rendering.",
+    "key_features": "Key Features:",
+    "features_intro": "The format provides powerful capabilities:",
+    "vrm_features": {
+      "skeleton": "Support for skeletal animations and rigging",
+      "materials": "PBR materials for realistic cross-platform rendering",
+      "expressions": "Morph targets for shape animation",
+      "eye_movement": "Flexible geometry and node hierarchies",
+      "vr": "Optimized for real-time rendering in games and VR"
+    },
+    "compatibility_title": "Integration & Compatibility",
+    "compatibility_description": "GLB assets work seamlessly with major 3D frameworks and engines:",
+    "compatibility_items": {
+      "threejs": "Three.js and React Three Fiber for web development",
+      "vrchat": "Unity and Unreal Engine for game development",
+      "engines": "Blender, Maya, and 3D modeling software",
+      "webgl": "Babylon.js and other WebGL frameworks",
+      "webxr": "Custom WebXR and AR applications"
+    },
+    "learn_more": "Learn More About GLB Integration"
+  },
+  "applications": {
+    "section_title": "Applications",
+    "title": "Where to Use Our Assets",
+    "web": {
+      "title": "Web Development",
+      "description": "Perfect for modern web applications using Three.js, React Three Fiber, and other WebGL frameworks. Ideal for creating interactive 3D experiences on the web."
+    },
+    "vr": {
+      "title": "VR & Gaming",
+      "description": "Ready for Unity, Unreal Engine, and game development. Full support for VR interactions and gaming platforms through standard GLB format."
+    },
+    "creative": {
+      "title": "Creative & Visualization",
+      "description": "Use in architectural visualization, product design, educational content, or creative projects. Perfect for any 3D application."
+    },
+    "showcase_description": "Discover more amazing applications and platforms using glTF technology in the official showcase.",
+    "showcase_link": "View glTF Showcase"
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "studio": {
+      "title": "Asset Studio",
+      "description": "Take screenshots and create videos with customizable backgrounds and lighting for your 3D assets."
+    },
+    "editor": {
+      "title": "Material Editor",
+      "description": "Modify materials and textures for your assets directly in the browser with our built-in editor."
+    }
+  },
+  "cta": {
+    "title": "Enjoy Free 3D Assets",
+    "description": "Access a growing collection of CC0-licensed 3D assets built on open standards. Free to use, modify, and share — no strings attached. Start exploring our high-quality models today!",
+    "documentation": "View Documentation"
+  },
+  "footer": {
+    "made_with": "Made with ♥️ by"
+  }
+}

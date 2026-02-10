@@ -1,0 +1,104 @@
+{
+  "title": "About OpenSource3DAssets.com",
+  "whatWeDo": {
+    "title": "What We Do",
+    "description1": "OpenSource3DAssets.com is a registry that helps you discover quality 3D assets with clear licensing.",
+    "description2": "We showcase open source 3D models from talented creators - props, environments, structures, and more. All assets use the GLB format, making them compatible with major game engines and 3D software. No more hunting through scattered repositories. We collect the metadata and links so you can focus on creating."
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "We index collections → Preserve metadata → You browse & download",
+    "steps": [
+      "We find 3D asset collections with open source licenses",
+      "We catalog download links, previews, specs, and license info",
+      "You filter by collection, theme, or style and download what you need",
+      "Files are hosted on GitHub, IPFS, or Arweave—making them accessible and preservable"
+    ],
+    "description": "Think of us as a search engine for free 3D assets - making 991+ models discoverable in one place."
+  },
+  "status": {
+    "title": "Current Status",
+    "badges": {
+      "beta": {
+        "label": "Beta",
+        "description": "Expect updates and improvements"
+      },
+      "avatars": {
+        "label": "991+ Assets",
+        "description": "Across 17 collections"
+      },
+      "format": {
+        "label": "GLB Format",
+        "description": "Universal compatibility"
+      },
+      "license": {
+        "label": "CC0 Licensed",
+        "description": "Use freely in any project"
+      }
+    }
+  },
+  "collections": {
+    "title": "Featured Collections",
+    "polygonalMind": {
+      "title": "Polygonal Mind Collections",
+      "description": "17 themed collections featuring props, environments, and structures. From MomusPark's park assets to Tomb Chaser's Egyptian pyramids and Japanese neon pagodas.",
+      "stats": "991+ assets | CC0 License"
+    }
+  },
+  "license": {
+    "title": "Licensing",
+    "description": "Most assets in our collection are CC0 (public domain) - meaning you can use them for anything without attribution. Some collections may have different licenses, which we clearly display on each asset page."
+  },
+  "technical": {
+    "title": "Technical Details",
+    "format": {
+      "title": "File Format",
+      "description": "All assets use GLB (binary glTF), the standard format for 3D on the web and beyond. Compatible with Blender, Unity, Unreal Engine, Three.js, and more."
+    },
+    "storage": {
+      "title": "Data Storage",
+      "description": "Asset metadata and files can be stored on GitHub, IPFS, or Arweave—ensuring long-term accessibility, decentralization, and version control. We're not limited to a single hosting provider."
+    }
+  },
+  "future": {
+    "title": "What's Next",
+    "items": [
+      "More asset collections from talented creators",
+      "Advanced filtering by polygon count, material type, and theme",
+      "Asset tagging and categorization system"
+    ]
+  },
+  "getInvolved": {
+    "title": "Get Involved",
+    "submitCollection": {
+      "title": "Submit a Collection",
+      "description": "Have open-licensed 3D assets you'd like to share? We'd love to add them!",
+      "requirements": {
+        "title": "Requirements:",
+        "list": [
+          "Open source license (CC0, CC-BY, etc.)",
+          "GLB format",
+          "Stable hosting (GitHub, IPFS, Arweave, etc.)"
+        ]
+      },
+      "submitVia": "Submit via [GitHub Discussions](https://github.com/ToxSam/open-source-3D-assets/discussions)"
+    },
+    "contributeCode": {
+      "title": "Contribute Code",
+      "description": "Found a bug? Want to add a feature?",
+      "link": "Open an issue → [GitHub Issues](https://github.com/ToxSam/os3a-gallery/issues)"
+    },
+    "giveFeedback": {
+      "title": "Give Feedback",
+      "description": "Have ideas for improvement? Let us know!",
+      "link": "Share feedback → [GitHub Issues](https://github.com/ToxSam/os3a-gallery/issues)"
+    }
+  },
+  "connect": {
+    "title": "Connect",
+    "website": "Website",
+    "websiteUrl": "https://toxsam.com",
+    "twitter": "Twitter",
+    "twitterUrl": "https://twitter.com/toxsam"
+  }
+}
