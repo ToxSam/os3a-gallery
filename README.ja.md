@@ -1,39 +1,40 @@
-# OpenSourceAvatars.com
+# OpenSource3DAssets.com
 
 > 🇬🇧 **[English version available here](README.md) / 英語版はこちら**
 
-無料でオープンソースの3Dアバターを発見するための中央レジストリ
+無料でオープンソースの3Dアセットを発見するための中央レジストリ
 
-🌐 [opensourceavatars.com](https://opensourceavatars.com)
+🌐 [opensource3dassets.com](https://opensource3dassets.com)
 
-実際に使用できるVRMアバターを簡単に見つけられるキュレーションされたディレクトリ - CC0パブリックドメインアバターから、明確なライセンスを持つコミュニティNFTコレクションまで。
+実際に使えるGLB 3Dアセットを簡単に見つけられるキュレーションされたディレクトリ - CC0パブリックドメインのモデル、小道具、環境、構造物と明確なライセンス情報。
 
 ## これは何ですか？
 
-OpenSourceAvatars.comは、ToxSamのCC0アバターコレクションのショーケースとして始まりましたが、あらゆる種類のオープンソース3Dアバターの発見プラットフォームに進化しました。
+OpenSource3DAssets.comは、ゲーム、VR体験、3Dプロジェクトなどに適した高品質な無料3Dアセットの発見プラットフォームです。
 
-複数のソースからアバターを集約しています：
+才能あるクリエイターのアセットを紹介しています：
 
-- **オリジナルコレクション**（Arweaveに保存されたCC0アバター）
-- **コミュニティNFTコレクション**（VIPE Heroes、Grifter Squaddiesなど）
+- **Polygonal Mind Collections** - 17のテーマ別コレクション、991以上のアセット
+  - MomusPark - 公園環境アセット
+  - Medieval Fair - 中世祭りの小道具と構造物
+  - Tomb Chaser 1 - エジプトのピラミッドテーマのアセット
+  - Tomb Chaser 2 - 日本のネオンパゴダアセット
+  - Chromatic Chaos - ヴェイパーウェイブ80年代風
+  - Crystal Crossroads - メビウス風砂漠環境
+  - その他11のユニークなコレクション！
 - **他のクリエイターのCC0作品**（近日公開）
 
-私たちのミッション：透明なライセンスを持つ高品質なアバターを簡単に見つけられるようにすること。
+私たちのミッション：透明なライセンスの高品質3Dアセットを簡単に見つけられるようにすること。
 
 ## 現在のコレクション
 
-### ToxSamのオリジナルコレクション（CC0）
+### Polygonal Mind Collections（CC0）
 
-- **100Avatars R1、R2、R3** - 300以上のアバター
-- 複数の形式：VRM、FBX、ボクセルバリアント
-- ArDriveに永続的に保存
-- 自由に使用可能、帰属表示不要
-
-### コミュニティコレクション
-
-- **VIPE Heroes** - NFTアバター（CC-BY）
-- **Grifter Squaddies** - [詳細を追加]
-- 定期的に追加中
+- **991以上の3Dアセット**、17のテーマ別コレクション
+- 形式：GLB（Blender、Unity、Unreal Engine、Three.jsなどに対応）
+- GitHubに永続保存
+- 帰属表示不要、自由に使用可能
+- ゲーム開発、VRプロジェクト、3Dビジュアライゼーションに最適
 
 各コレクションはライセンスを明確に表示しているため、何ができるかが正確にわかります。
 
@@ -41,104 +42,137 @@ OpenSourceAvatars.comは、ToxSamのCC0アバターコレクションのショ�
 
 ### 🔍 閲覧とフィルター
 
-- コレクション、スタイル、または特性で検索
+- コレクション、テーマ、スタイルで検索
 - ライセンスタイプでフィルター（CC0、CC-BYなど）
 - ダウンロード前に3Dモデルをプレビュー
+- Three.jsによるインタラクティブ3Dビューア
 
-### 🛠️ VRMインスペクター
+### 📦 アセットファインダー
 
-VRMファイルを分析するための高度なツール：
+効率的なワークフローのための一括操作：
 
-- メタデータと技術仕様を表示
-- 表情とブレンドシェイプをテスト
-- テクスチャとマテリアルを検査
-- スケルトンとワイヤーフレームを可視化
+- 複数選択で一括ダウンロード
+- コレクション横断でのフィルターと検索
+- サムネイルとメタデータのプレビュー
+- 個別アセットまたはコレクション全体のダウンロード
 
-`/vrmviewer`でアクセス
+### 🎨 3Dビューア
 
-### 🌐 多言語対応
+アセットを確認するインタラクティブビューア：
 
-完全な日本語ローカライゼーションを利用可能
-
-### 📊 開発者フレンドリー
-
-すべてのアバターデータがデータリポジトリ経由でJSONとして利用可能
+- 3Dモデルの回転、ズーム、パン
+- マテリアルとテクスチャの確認
+- ポリゴン数・頂点数情報
+- エクスポート形式の互換性チェック
 
 ## 技術スタック
 
-- **フロントエンド**：Next.js、React、Tailwind CSS
-- **データソース**：open-source-avatars JSONリポジトリ
-- **ストレージ**：Arweave（私たちのアバター）、IPFS（コミュニティコレクション）
+- **フレームワーク**：Next.js 14（App Router）
+- **スタイリング**：TailwindCSS
+- **3Dレンダリング**：Three.js + GLTFLoader
+- **データストレージ**：GitHub（JSONファイル）
+- **デプロイ**：Vercel
+- **ライセンス**：MIT
 
-## アーキテクチャ
+## データソース
 
-2リポジトリアプローチ：
+すべてのアセットメタデータは [open-source-3D-assets](https://github.com/ToxSam/open-source-3D-assets) リポジトリに保存されています。
 
-- **[osa-gallery](https://github.com/ToxSam/osa-gallery)**（このリポジトリ）- ウェブサイトコードとUI
-- **[open-source-avatars](https://github.com/ToxSam/open-source-avatars)** - アバターメタデータとレジストリ
+```
+data/
+├── projects.json           # コレクションメタデータ
+└── assets/
+    ├── pm-momuspark.json  # MomusParkアセット
+    ├── pm-medieval.json   # Medieval Fairアセット
+    └── ...                # その他のコレクション
+```
 
-この分離により、データが透明になり、コミュニティの貢献が容易になります。
+## はじめに
 
-## VRMとは？
+### 前提条件
 
-VRMは、ゲーム、VRアプリ、ウェブブラウザーで動作するオープンな3Dアバター形式です。汎用アバターファイルと考えてください。
+- Node.js 18+
+- npm または yarn
 
-対応：
+### インストール
 
-- VRChat、VSeeFace、VTuberアプリ
-- Unity（UniVRM）
-- ウェブ（three-vrm）
-- Unreal Engine（VRM4U）
+```bash
+# リポジトリをクローン
+git clone https://github.com/ToxSam/os3a-gallery.git
 
-## 開発ストーリー
+# 依存関係をインストール
+cd os3a-gallery
+npm install
 
-Claude、ChatGPT、Bolt.newを使用して4日で構築し、その後Cursorを通じてClaude 3.7 Sonnetで継続的に改善。限られたコーディング経験を持つクリエイターがAIツールの助けを借りて実際のアプリケーションを構築できることの証明です。
+# 開発サーバーを起動
+npm run dev
+```
 
-## ロードマップ
+`http://localhost:3000` にアクセスしてギャラリーを表示します。
 
-- ✅ 明確なライセンスを持つマルチコレクションサポート
-- ✅ VRMインスペクターツール
-- ✅ 日本語ローカライゼーション
-- 🔄 より多くのコミュニティコレクションを追加
-- 🔄 改善された3Dビューアーナビゲーション
-- 📋 新しいコレクションのためのコミュニティ提出システム
-- 📋 高度なフィルタリング（ポリゴン数、スタイルなど）
+### 環境変数
+
+`.env.local` ファイルを作成してください：
+
+```env
+GITHUB_REPO_OWNER=ToxSam
+GITHUB_REPO_NAME=open-source-3D-assets
+GITHUB_BRANCH=main
+```
+
+## プロジェクト構造
+
+```
+src/
+├── app/                    # Next.js App Router ページ
+│   ├── en/                 # 英語ルート
+│   ├── ja/                 # 日本語ルート
+│   └── api/                # APIルート
+├── components/             # Reactコンポーネント
+│   ├── asset/              # アセット関連コンポーネント
+│   ├── finder/             # ファインダー/ブラウザコンポーネント
+│   └── VRMViewer/          # 3Dビューアコンポーネント
+├── lib/                    # ユーティリティ関数
+├── locales/                # i18n翻訳
+└── types/                  # TypeScript型定義
+```
 
 ## 貢献
 
-### コレクションを追加したいですか？
+貢献を歓迎しています。以下のような形で参加できます：
 
-GitHub Discussionsを通じて提出してください：
-
-- コレクション情報とライセンス
-- VRMファイルへのリンク（IPFS、Arweave、永続的なホスティング）
-- プレビュー画像
-
-### コードの貢献
-
-バグを見つけましたか？UIを改善したいですか？プルリクエストを歓迎します！
-
-## 連絡先
-
-- **Twitter**：[@ToxSam](https://twitter.com/ToxSam)
-- **ウェブサイト**：[ToxSam.com](https://toxsam.com)
+1. **アセットの追加**：[データリポジトリ](https://github.com/ToxSam/open-source-3D-assets) にPRを送信
+2. **ギャラリーの改善**：バグ修正、機能追加、UI/UXの改善
+3. **翻訳**：サイトの多言語翻訳に協力
+4. **問題の報告**：バグを見つけたら [Issueを立てる](https://github.com/ToxSam/os3a-gallery/issues)
 
 ## ライセンス
 
-- **ウェブサイトコード**：MIT License
-- **アバターモデル**：コレクションによって異なります - 個別のコレクションライセンスを確認してください
-- 私たちのオリジナルアバター（100Avatarsシリーズ）は**CC0パブリックドメイン**です。
+このプロジェクト（ギャラリーウェブサイト）はMITライセンスです。詳細はLICENSEファイルを参照してください。
 
+3Dアセット自体はそれぞれのライセンス（主にCC0）に従います。各コレクションのライセンス情報を確認してください。
 
+## クレジット
+
+- **ギャラリー開発**：ToxSam
+- **3Dアセット**：Polygonal Mindおよび貢献クリエイター
+- **Three.js**：素晴らしい3Dレンダリングライブラリ
+- **Next.js**：優れたReactフレームワーク
+
+## リンク
+
+- 🌐 ウェブサイト：[opensource3dassets.com](https://opensource3dassets.com)
+- 📊 データリポジトリ：[github.com/ToxSam/open-source-3D-assets](https://github.com/ToxSam/open-source-3D-assets)
+- 🐦 Twitter：[@toxsam](https://twitter.com/toxsam)
+- 💬 Discord：[コミュニティに参加](#)
+
+## ロードマップ
+
+- [ ] 他のクリエイターのアセットコレクションを追加
+- [ ] 高度なフィルタリング（ポリゴン数、マテリアルタイプなど）の実装
+- [ ] アセットプレビュー動画の追加
+- [ ] アセットタグシステムの構築
 
 ---
 
-<small>
-
-本ウェブサイトの翻訳はAIツールを使用して作成されました。
-ご不便やご迷惑をおかけした場合、深くお詫び申し上げます。
-ご理解いただき、ありがとうございます。
-問題を発見された場合は、お気軽にお問い合わせください。
-ありがとうございます。
-
-</small>
+Made with ❤️ by ToxSam | Powered by Next.js & Three.js
